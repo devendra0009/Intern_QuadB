@@ -28,8 +28,8 @@ const Desc = ({ link }) => {
   return (
     <>
       {Object.keys(showDesc).length !== 0 && (
-        <div key={showDesc.id} className="">
-          <div className="flex  max-w-[900px] mx-auto relative">
+        <div key={showDesc.id} className="my-12">
+          <div className="md:flex  max-w-[900px] mx-auto  md:px-12 text-center">
             {/* <a href={showDesc.url} target="_blank" rel="noreferrer" className=''> */}
             <img
               src={
@@ -37,13 +37,13 @@ const Desc = ({ link }) => {
                 `https://lionsgate.brightspotcdn.com/27/26/1761e2fe4faea9e2eb8ad0cbdebb/john-wick-chapter-4-movies-he-poster-02.jpg`
               }
               alt=""
-              className="h-80"
+              className="h-80 mx-auto"
             />
+            {/* </a> */}
+            <div className="details mx-8 relative">
             <span className="absolute top-0 right-0 rounded-sm p-[0.25em] bg-red-600">
               {showDesc.language}
             </span>
-            {/* </a> */}
-            <div className="details px-8">
               <h1 className="text-2xl text-yellow-400 my-2">{showDesc.name}</h1>
               <h1>
                 Premiered on{' '}

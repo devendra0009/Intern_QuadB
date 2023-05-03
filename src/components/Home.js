@@ -16,7 +16,7 @@ const Home = ({ setLink }) => {
   }, []);
 
   return (
-    <div className="grid grid-cols-3 max-w-[900px] mx-auto ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 max-w-[900px] mx-auto ">
       {shows.map((s) => {
         return (
           <div key={s.show.id} className="my-4 mx-auto relative">
